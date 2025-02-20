@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, y, h;
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной h");
+            h=Convert.ToDouble(Console.ReadLine());
+
+            A = Math.Tan(Math.Pow(y, 3) - Math.Pow(h, 4)) + Math.Pow(h, 2) / Math.Pow(3,Math.Sin(h)) + y;
+
+            Console.WriteLine($"значение переменной A={A}");
+            Console.ReadKey();
+        }
+    }
+}
