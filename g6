@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double K, x, b, a, y;
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной x");
+            x=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной b");
+            b=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной a");
+            a=Convert.ToDouble(Console.ReadLine());
+
+            K = Math.Sqrt(x + b - a) + Math.Log10(y) / Math.Atan(b + a);
+
+            Console.WriteLine($"значение переменной K={K}");
+            Console.ReadKey();
+        }
+    }
+}
