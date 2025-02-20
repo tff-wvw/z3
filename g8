@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double P, a, y, c, x;
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной x");
+            x=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной a");
+            a=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение выражения c");
+            c=Convert.ToDouble(Console.ReadLine());
+
+            P = Math.Pow(a, 5) + Math.Sin(Math.Pow(4, (y - c))) / Math.Sin(Math.Pow(3, (x + y))) + Math.Abs(x - y);
+
+            Console.WriteLine($"значение переменной P={P}");
+            Console.ReadKey();
+        }
+    }
+}
