@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double S, x, y;
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной x");
+            x=Convert.ToDouble(Console.ReadLine());
+
+            S = Math.Exp(Math.Pow(x, 3)) + Math.Cos(Math.Pow(2, (x - 4))) / Math.Atan(x) + 5.2 * y;
+
+            Console.WriteLine($"значение переменной S={S}");
+            Console.ReadKey();
+        }
+    }
+}
