@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double L, c, x, t;
+
+            Console.WriteLine("введите значение переменной c");
+            c=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной x");
+            x=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной t");
+            t=Convert.ToDouble(Console.ReadLine());
+
+            L = c * Math.Pow(Math.Tan(c), 2) + (2 * Math.Pow(x, 2) + 5 / Math.Sqrt(c + t));
+
+            Console.WriteLine($"значение переменной L={L}");
+            Console.ReadKey();
+        }
+    }
+}
