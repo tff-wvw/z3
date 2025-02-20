@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double R, y, d, x;
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной x");
+            x=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение выражения d");
+            d=Convert.ToDouble(Console.ReadLine());
+
+            R = Math.Cos(Math.Pow(2, y)) + 2.4 * d / Math.Exp(y) + Math.Log10(Math.Sin(Math.Pow(2, x)) + 6);
+
+            Console.WriteLine($"значение переменной R={R}");
+            Console.ReadKey();
+        }
+    }
+}
